@@ -1,0 +1,12 @@
+In order to start this tutorial, we're going to require a running server. This will serve purely as an API endpoint which we'll use for getting and saving data. In order to make this as easy as possible, we've created a simple server in a number of scripting languages that does exactly what we need it to do. You can view the source or download a zip file containing everything needed to get started.
+
+For sake of simplicity, the server we will run uses a JSON file as a database. You would not run this in production but it makes it easy to simulate what you might do when consuming an API. Once you start the server, it will support our API endpoint and it will also serve the static pages we need.
+We pass some methods in a JavaScript object to React.createClass() to create a new React component. The most important of these methods is called render which returns a tree of React components that will eventually render to HTML.
+
+The div tags are not actual DOM nodes; they are instantiations of React div components. You can think of these as markers or pieces of data that React knows how to handle. React is safe. We are not generating HTML strings so XSS protection is the default.
+
+You do not have to return basic HTML. You can return a tree of components that you built. This is what makes React composable: a key tenet of maintainable frontends.
+
+ReactDOM.render() instantiates the root component, starts the framework, and injects the markup into a raw DOM element, provided as the second argument.
+
+The ReactDOM module exposes DOM-specific methods, while React has the core tools shared by React on different platforms.
